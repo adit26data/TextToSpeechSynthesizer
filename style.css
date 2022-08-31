@@ -1,0 +1,35 @@
+body {
+    /*background: url('./bgbg2.jpg');*/
+
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    ;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 1s ease;
+
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 2);
+    height: 95%;
+    margin-top: 0.5rem;
+    transform: translateY(-50%, -50%);
+
+    /* top: 50%;
+    left: 50%; */
+}
+
+.btn::before {
+    transform: perspective(1em)rotateX(40deg)scale(1, 0.35);
+    filter: blur(8px);
+    transition: 1s ease;
+}
