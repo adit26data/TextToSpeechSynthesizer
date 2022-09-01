@@ -52,6 +52,7 @@ const speak = () => {
         body.style.backgroundSize = '100% 100%';
         //get speaking text
         const speakText = new SpeechSynthesisUtterance(textInput.value);
+        speakText.lang='en-US';
         //speak end
         speakText.onend = e => {
             console.log('Done Speaking...!');
